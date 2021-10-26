@@ -1,0 +1,93 @@
+@import url(/tp/register.html);
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+background: linear-gradient(rgb(256,256,256), #510979); /*graduacion de colores*/
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+height: 100vh;
+padding: 6rem 1rem;
+}
+
+a {
+    color: darkblue;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    background: linear-gradient(90deg, black , white);
+    border: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*alinea los elementos en el centro del eje X e Y*/
+    align-items: center;
+}
+
+/***Form inputs***/
+.imput-container, .button-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 100%;
+}
+
+span.error-message {
+    color: red;
+    font-size: 10px;
+    margin: 5px auto;
+    display: none;
+}
+
+input.input-style {
+    border: none; /*borde*/
+    border-radius: 1rem; /*borde redondeado*/
+    height: 2.5rem;
+    padding: .5rem;
+}
+
+input.input-style::placeholder {
+    color: black;
+} 
+
+label {
+    font-size: 12px;
+}
+
+.form-container {
+    background: linear-gradient(blue,violet);
+    border-radius: 10px;
+    margin: 0 auto;
+    height: fit-content;
+    height: -moz-fit-content;
+    width: 100%;
+    padding: 1rem;
+}
+
+/***BUTTONS***/
+
+.btn {
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer; /*cambia la forma al acercar a un boton del puntero flecha por una mano para dar a entender que es clicleable*/
+    height: 2.5rem;
+    text-transform: uppercase;
+    width: 8rem;
+    font-weight: bold; 
+}
+
+.btn-submit {
+    background: linear-gradient(45deg, rgba(255,255,255,1) 0%,  rgba(39,255,232,0.5) 50%);
+    color: rgb(75,75,75);
+}
+
